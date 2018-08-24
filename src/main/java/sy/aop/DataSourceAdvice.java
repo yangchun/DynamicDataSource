@@ -4,7 +4,6 @@ import java.lang.reflect.Method;
 
 import javax.sql.DataSource;
 
-import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -21,8 +20,7 @@ import sy.util.DynamicDataSource;
 @Component
 public class DataSourceAdvice {
 	
-	private Logger logger = Logger.getLogger(this.getClass());
-	
+
 	@Pointcut("execution(public * sy.dao..*.*(..))")
     public void myMethod(){
 		
