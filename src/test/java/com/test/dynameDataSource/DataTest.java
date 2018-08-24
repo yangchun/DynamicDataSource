@@ -17,7 +17,7 @@ public class DataTest {
 			System.out.println(user.getUsername());
 			
 		}else{
-			
+			System.out.println("123123123123");
 			System.out.println("user dao is null");
 			
 		}
